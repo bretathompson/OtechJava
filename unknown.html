@@ -1,6 +1,3 @@
-<!-- Life cycle -->
-planning & analysis, requirements, product architecture, build develop, testing, deployment & maintenance, operations
-
 git config --global diff.tool vscode
 git config --global difftool.vscode.cmd "code --wait --diff $LOCAL $REMOTE"
 git config --global -e
@@ -14,30 +11,6 @@ git add . (stages current files)
 git status
 git commit -m (-m adds message line)
 
-
-
-https://otech.instructure.com/courses/786342/pages/how-to-carry-out-a-requirements-analysis?module_item_id=17252854
-project requirements
-The first step is to gather the requirements by collecting business process documentation and conducting interviews with stakeholders. 
-Next, analyze and validate the requirements, evaluating whether they're clear, complete, consistent, and unambiguous. 
-Finally, record the requirements and monitor their implementation throughout the project. 
-
-analysis techniques help to discover business needs
-Gap analysis: 
-Business motivation model (BMM)
-Customer journey mapping:
-
-software requirement needs
-Data flow program: 
-Use cases
-User stories
-
-Wireframes
-first stage is called the low-fidelity wireframe
-second stage is called the mid-fidelity wireframe
-final stage is called the high-fidelity wireframe
-
-
 <!-- html only -->
 <p>I am part of the HTML document!</p>
 <script>document.write('This came from my script, and is now on the page!');</script>
@@ -48,6 +21,31 @@ final stage is called the high-fidelity wireframe
 document.write("<h2 style='color: blue;'>Otech</h2>");
 document.write("<h2 style='border: 1px solid;'>Hello Otech</h2><p>words</p>");
 
+
+<!-- script attribute -->
+<script type="text/javascript"></script> for old JS new JS not need "type"
+
+<!-- variable -->
+let name = 'mosh'; console.log(name); 
+
+<!-- primitives = --> string/number/boolean/undefined 
+string = name, items, 
+numbers = all numbers
+boolean = true or false or undefined
+undefined = null or missing code
+
+<!-- template literals -->
+escape quotes with \ ("Sara \"you look \'harder\' to kidnap\"");  result sara "you look 'harder' to kidnap"
+new JS uses `  (`Sara "you look 'harder' to kidnap"`)
+
+old  var status = "awesome"; document.write("This class is " + status); result this classis awsome
+new var status = "awesome"; document.write(`This class is ${status}`);
+
+<!-- reference types --> object/array/function
+object = things you touch  example.. let person = { name: 'mosh', age: 30 }; console.log(person);
+array = lists
+function = does things
+
 <!-- dot notation -->
 person.name = 'john';
 
@@ -55,9 +53,7 @@ person.name = 'john';
 let selection = 'name';
 person[selection] = 'marry';
 
-person['name'] = 'marry';
-
-console.log(person.name);
+person['name'] = 'marry';  console.log(person.name);
 
 <!-- array -->
 let selectedColor = ['red, blue']
@@ -72,8 +68,19 @@ function greet() { console.log('hello'); } greet();
 function greet(name) { console.log('hello ' + name + '' + lastName); } greet('john');
 function square(number) { return number * number; } console.log(square(2));
 
+<!-- special charaters --> \b backspace, \n newline, \r return, \t tab, \v vertical, \", \', \\
+2 lines <script type="text/javascript"> doc.write("<strong>JS rules</strong>\n this is fun")</script>
+escape use \  \"javascript is easy \" "
+("<a href=\"http://site.com\">text</a> ") or ("<a href='http://site.com'>text</a> ")
+
+
+
+
 <!-- math -->
 let x = 10; let y = 3;  console.log(x +, -, *, /, %, ** y);
 
 increment (++)  console.log(++x) +1 then x or x++  x then +1;
 decrement (--) console.log(--x) -1 then x or x--  x then -1;
+
+
+
