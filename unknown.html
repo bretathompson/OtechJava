@@ -17,10 +17,10 @@ git commit -m (-m adds message line)
 <p><em>I am also part of the HTML document, after the script results!</em></p>
 
 <body><script src="prjs6_2.js"></script></body> script or p
-
     <!-- in js page  -->
 document.write("<h2 style='color: blue;'>Otech</h2>");
 document.write("<h2 style='border: 1px solid;'>Hello Otech</h2><p>words</p>");
+
 
 <!-- script attribute -->
 <script type="text/javascript"></script> for old JS new JS not need "type"
@@ -61,26 +61,38 @@ to add to array  selectedColor[2] = 'green';
 console.log(selectedColor); or (selectedColor[0]);
 see how big array is  console.log(selectedColor.length)
 
-<!-- functions -->
+<!-- functions --> performs a task or returns a value
 function greet(perameter, 2nd pera) { console.log('hello'); } greet('argument');
 
 function greet() { console.log('hello'); } greet();
 function greet(name) { console.log('hello ' + name + '' + lastName); } greet('john');
 function square(number) { return number * number; } console.log(square(2));
-
-<!-- special charaters --> \b backspace, \n newline, \r return, \t tab, \v vertical, \", \', \\
-2 lines <script type="text/javascript"> doc.write("<strong>JS rules</strong>\n this is fun")</script>
-escape use \  \"javascript is easy \" "
-("<a href=\"http://site.com\">text</a> ") or ("<a href='http://site.com'>text</a> ")
+    
+    function declaration   function walk() {console.log('walk'); } you can use hoisting call before delcaring
+    function expression    let run = function() {console.log('run');}; run();
 
 
 
+<!-- arrow functiona -->
+let full_name = (last_name) => {return "Yakko" + last_name;}; let result = full_name("Warner"); 
+document.write(result); result: Yakko Warner
+
+
+
+
+
+window.alert("this is alert");
+function show_message(){ window.alert("alert");} show_message();
 
 <!-- math -->
 let x = 10; let y = 3;  console.log(x +, -, *, /, %, ** y);
 
 increment (++)  console.log(++x) +1 then x or x++  x then +1;
 decrement (--) console.log(--x) -1 then x or x--  x then -1;
+
+
+
+
 
 
 
