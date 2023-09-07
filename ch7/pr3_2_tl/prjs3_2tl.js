@@ -5,7 +5,7 @@ begineffect = "<strong>",
 endeffect = "</strong>",
 beginpara = "<p>",
 endpara = "</p>";
-document.write(myheading);
-document.write(begineffect + sometext + endeffect);
-document.write(beginpara + linktag + endpara);
-document.write(beginpara + sometext + endpara);
+document.write(`${myheading}`);
+document.write(`${begineffect} ${sometext} ${endeffect}`);
+document.write(`${beginpara} ${linktag} ${endpara}`);
+document.write(`${beginpara} ${sometext} ${endpara}`);
